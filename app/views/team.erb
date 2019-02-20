@@ -1,3 +1,29 @@
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Team</title>
+</head>
+<body>
+  <h1><%= @team_name %></h1>
+  <h2>Team Motto: <%= @team_motto %></h2>
+  <h2>Hero Name: <%= params[:member1_name] %></h2>
+  <p>Hero Power: <%= params[:member1_power] %></p>
+  <p>Hero Biography: <%= params[:member1_bio] %></p>
+  <h2>Hero Name: <%= params[:member2_name] %></h2>
+  <p>Hero Power: <%= params[:member2_power] %></p>
+  <p>Hero Biography: <%= params[:member2_bio] %></p>
+  <h2>Hero Name: <%= params[:member3_name] %></h2>
+  <p>Hero Power: <%= params[:member3_power] %></p>
+  <p>Hero Biography: <%= params[:member3_bio] %></p>
+<!--
+<%#>  <% params[:team][:members].each do |member| %>
+<%#    <h2>Hero Name: <%= member[:name] %></h2>
+<%#>    <p>Hero Power: <%= member[:power] %></p>
+<%#>    <p>Hero Biography: <%= member[:bio] %></p>
+<%#>  <% end %>
+-->
+</body>
+</html>
